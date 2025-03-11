@@ -8,11 +8,17 @@ TODO :
 - travailler la persistance bdd (historique des scripts ? detection quand on a un nouveau script ?)
 
 
+xdebug.log_level=0
+
 si nécessaire, changer les droits sur les scripts du dépot :
 sudo chmod 777 *.sh
 sudo chmod -R 777 database/scripts/
 
-composer -v 
+
+composer -v
+
+composer global require "laravel/installer" 
+
 
 composer create-project --prefer-dist laravel/laravel:^10.0 site
 

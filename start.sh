@@ -1,7 +1,7 @@
 #!/bin/bash
 # script pour démarrer les serveurs PHP et MariaDB
 
-# Définir le chemin vers les dossiers web et web/API
+# Définir le chemin vers les dossiers d'hebergements du site web et du site phpmyadmin
 WEB_DIR="site/public"
 phpMyAdmin_DIR="../../usr/src/phpmyadmin"
 
