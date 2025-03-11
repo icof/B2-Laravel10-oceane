@@ -2,7 +2,7 @@
 # script pour démarrer les serveurs PHP et MariaDB
 
 # Définir le chemin vers les dossiers web et web/API
-WEB_DIR="site"
+WEB_DIR="site/public"
 phpMyAdmin_DIR="../../usr/src/phpmyadmin"
 
 # Créer le répertoire /run/mysqld si nécessaire et définir les permissions

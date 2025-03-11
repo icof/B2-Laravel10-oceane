@@ -7,6 +7,37 @@ TODO :
 - améliorer la structure
 - travailler la persistance bdd (historique des scripts ? detection quand on a un nouveau script ?)
 
+
+si nécessaire, changer les droits sur les scripts du dépot :
+sudo chmod 777 *.sh
+sudo chmod -R 777 database/scripts/
+
+composer -v 
+
+composer create-project --prefer-dist laravel/laravel:^10.0 site
+
+sudo ./start.sh 
+sudo ./database/scripts/initBDD.sh
+
+
+cd site
+php artisan migrate
+
+
+composer require reliese/laravel --dev
+
+php artisan vendor:publish --tag=reliese-models
+php artisan config:clear
+
+php artisan code:models
+
+
+composer dump-autoload
+
+php artisan tinker
+
+Bateau::all()
+
 ## Arborescence du dépôt
 
 Voici l'arborescence du dépôt et le rôle des différents composants. Les fichiers et dossiers à modifier sont en gras :
