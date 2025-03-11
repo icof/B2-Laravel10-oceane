@@ -2,7 +2,7 @@
 # script pour démarrer les serveurs PHP et MariaDB
 
 # Définir le chemin vers les dossiers d'hebergements du site web et du site phpmyadmin
-WEB_DIR="site/public"
+WEB_DIR="site/laravel10/public"
 phpMyAdmin_DIR="../../usr/src/phpmyadmin"
 
 # Créer le répertoire /run/mysqld si nécessaire et définir les permissions

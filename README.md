@@ -44,6 +44,19 @@ php artisan tinker
 
 Bateau::all()
 
+composer require laravel/breeze
+
+php artisan breeze:install
+
+node -v
+npm -v
+
+npm install
+npm run build
+
+pour le .env :
+APP_URL=https://${CODESPACE_NAME}-8000.githubpreview.dev
+
 ## Arborescence du dépôt
 
 Voici l'arborescence du dépôt et le rôle des différents composants. Les fichiers et dossiers à modifier sont en gras :
