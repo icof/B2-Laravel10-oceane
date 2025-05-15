@@ -34,8 +34,9 @@ php artisan route:cache
 php artisan view:clear
 php artisan view:cache
 
-
-
+Si besoin ajouter les dépendances node :
+npm install
+npm run build
 
 
 
