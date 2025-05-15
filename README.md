@@ -21,6 +21,23 @@ Sur un projet Laravel existant, le gitignore à la racine ne remonte volontairem
 
 Pour recréer le dossier vendor d'un projet existant dans un nouveau codespace ou environnement local, il faut executer "composer install" à la racine du projet (là où sont écrit les fichiers de config composer.json, composer.lock et package-lock.json)
 
+Créer le .env par copie du .env.example
+
+php artisan key:generate
+
+php artisan config:clear
+php artisan config:cache
+
+php artisan route:clear
+php artisan route:cache
+
+php artisan view:clear
+php artisan view:cache
+
+
+
+
+
 
 # A Reprendre....
 composer -v
