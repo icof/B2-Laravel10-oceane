@@ -13,6 +13,16 @@ sudo chmod 777 *.sh
 sudo chmod -R 777 database/scripts/
 
 
+Sur un projet Laravel existant, le gitignore à la racine ne remonte volontairement pas un certai nb de fichiers dan sle dépot (volumineux et facilement regenerable ou sensibles) comme :
+/vendor
+.env
+.env.backup
+.env.production
+
+Pour recréer le dossier vendor d'un projet existant dans un nouveau codespace ou environnement local, il faut executer "composer install" à la racine du projet (là où sont écrit les fichiers de config composer.json, composer.lock et package-lock.json)
+
+
+# A Reprendre....
 composer -v
 
 composer global require "laravel/installer" 
